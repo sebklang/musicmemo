@@ -21,11 +21,11 @@ def section():
 
     parts = score.getElementsByClass(stream.Part)
     if len(parts) < 1:
-        abort400WithMessage('Not enough voices in score')
+        abort400WithMessage('Not enough parts in score')
 
     measures = parts[0].getElementsByClass(stream.Measure)
     if len(measures) < NUM_MEASURES:
-        abort400WithMessage('Not enough measures in voice')
+        abort400WithMessage('Not enough measures in part')
     
     begin = randint(0, len(measures) - NUM_MEASURES)
     end = begin + NUM_MEASURES - 1
