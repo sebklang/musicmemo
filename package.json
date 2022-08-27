@@ -1,0 +1,33 @@
+{
+  "name": "musicmemo",
+  "version": "1.0.0",
+  "description": "Web app for sheet music memorization",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebklang/musicmemo.git"
+  },
+  "keywords": [
+    "sheet",
+    "music",
+    "memorization"
+  ],
+  "author": "Sebastian Klang",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sebklang/musicmemo/issues"
+  },
+  "homepage": "https://github.com/sebklang/musicmemo#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "opensheetmusicdisplay": "^1.5.1"
+  }
+}
