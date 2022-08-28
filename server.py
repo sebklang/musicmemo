@@ -29,8 +29,20 @@ def section():
     
     begin = randint(0, len(measures) - NUM_MEASURES)
     end = begin + NUM_MEASURES - 1
+    section = score.measures(begin, end)
 
-    GEX = musicxml.m21ToXml.GeneralObjectExporter(score.measures(begin, end))
+    try:
+        section.getElementsByClass(
+            stream.Part
+        )[0].getElementsByClass(
+            stream.Measure
+        )[0].getElementsByClass(
+            note.Note
+        )[0].style.color = 'green'
+    except IndexError:
+        pass
+
+    GEX = musicxml.m21ToXml.GeneralObjectExporter(section)
     return GEX.parse()
 
 if __name__ == '__main__':
