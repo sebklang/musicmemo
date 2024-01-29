@@ -1,5 +1,7 @@
 # MusicMemo
 
+Web app for sheet music memorization.
+
 ## Building
 
 ```
