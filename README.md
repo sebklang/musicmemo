@@ -3,8 +3,10 @@
 ## Building
 
 ```
-npm install (first time)
-npm run build (every build)
+pip install flask
+pip install music21
+npm install
+npm run build
 ```
 
 ## Running
@@ -12,4 +14,3 @@ npm run build (every build)
 ```
 python3 server.py
 ```
-Python dependencies: flask, music21. Both are installable with pip.
