@@ -3,7 +3,8 @@
 ## Building
 
 ```
-npm run build
+npm install (first time)
+npm run build (every build)
 ```
 
 ## Running
